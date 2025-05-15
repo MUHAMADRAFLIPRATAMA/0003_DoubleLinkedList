@@ -152,3 +152,12 @@ void traverse()
 
 }
 
+void revtraverse()
+{
+ if (START == NULL)
+ {
+     cout << "\nList is emptu" << endl;
+     return;
+ }
+
+ 
