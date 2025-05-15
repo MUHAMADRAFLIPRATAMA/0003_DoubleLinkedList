@@ -195,4 +195,19 @@ void searchData()
 
  Node *current = START;
 
- 
+ //step 1 : 
+ while (current != NULL && current->noMhs != rollNo)
+     current = current->next;
+ //step 2:output result
+ if (current == NULL)
+ {
+     cout << " Record not found\n";
+ }
+ else
+ {
+     cout << "Record founf\n";
+     cout << "Roll Number" << current->noMhs << endl;
+ }
+}
+};
+
