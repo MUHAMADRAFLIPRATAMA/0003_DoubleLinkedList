@@ -181,3 +181,18 @@ void revtraverse()
  }
 }
 
+void searchData()
+{
+ if (START == NULL)
+ {
+     cout << "\nLList is empy" << endl;
+     return;
+ }
+
+ int rollNo;
+ cout << "\nEnter the roll number to search:";
+ cin >> rollNo;
+
+ Node *current = START;
+
+ 
