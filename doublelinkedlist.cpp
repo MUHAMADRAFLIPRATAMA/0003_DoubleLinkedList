@@ -104,4 +104,21 @@ void hapus()
      return;
  }
 
+ //step 2 : if mode is at the begining
+ if (current == START)
+ {
+     START = current->next;//steep 2a : START = START.next
+     if (START != NULL)
+         START->prev = NULL; //step 2b: START.prev = NULL
+ }
+ else
+ {
+     //step 3: Link previous node to next of current
+     current->prev->next = current->next;
+
+     //stepp 4: if current is not the last node
+     if (current ->next != NULL)
+         current->next->prev = current->prev;
+ }
+ 
  
