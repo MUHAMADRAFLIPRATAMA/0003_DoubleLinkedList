@@ -134,4 +134,7 @@ void traverse()
      return;
  }
 
+ //step 1: Mark first node as currentNode
+ Node *currentNode = START;
+
  
