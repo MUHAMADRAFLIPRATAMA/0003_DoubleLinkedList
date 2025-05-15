@@ -27,5 +27,6 @@ class DoubleLinkedList
             string nm;
             cout << "\nEnter the roll number of the student";
             cin >> nim;
+ //step 1: Allcate memory for new node
+ Node *newNode = new Node();
 
-           
